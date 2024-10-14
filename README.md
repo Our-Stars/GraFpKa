@@ -1,6 +1,8 @@
-![Workflow](https://github.com/Our-Stars/GraFpKa/blob/master/images/Workflow.png)
+
 # GraFpKa
-A graph neural network-based interpretable platform for small molecule pKa prediction.  
+A graph neural network-based interpretable platform for small molecule pKa prediction. 
+  
+![Workflow](https://github.com/Our-Stars/GraFpKa/blob/master/images/Workflow.png)  
 
 ## Environment Installation
 * The project provides an environment file env_GraFpKa.yml. You can install the environment by running the following command:  
