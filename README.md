@@ -1,3 +1,4 @@
+![Workflow](https://github.com/Our-Stars/GraFpKa/blob/master/images/Workflow.png)
 # GraFpKa
 A graph neural network-based interpretable platform for small molecule pKa prediction.  
 
