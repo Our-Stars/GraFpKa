@@ -6,7 +6,8 @@ A graph neural network-based interpretable platform for small molecule pKa predi
 
 ## Overview
 * `input\`: Input data, including the training dataset, external validation set, and ionizable site file.  
-* `model\`: The GraFpKa model.  
+* `model\`: The GraFpKa model.
+* `results\`:Used to store prediction results.
 * `temp\`: A temporary folder for storing temporary data.  
 * `visualization\`: Visualization results, used to store the results of interpretability analysis.
   
