@@ -288,14 +288,14 @@ def highlight_atoms_or_bonds_from_IG(model, smiles, inputs, baselines, target, a
 
 
 # 针对多个分子，根据输入计算积分梯度值（IG），将每一个原子的所有IG值求和作为该原子的权重，然后绘制权重热图，注意：这里的data必须是DataLoader分批前的数据
-def batch_highlight_atoms_or_bonds_from_IG(data, model, save_path, devices, threshold=-1):
+def batch_highlight_atoms_or_bonds_from_IG(data, model, save_path, devices, acidic_or_basisc, threshold=-1):
     target = None
     for i, data_i in enumerate(data):
         data_i.to(devices)
         baselines = torch.zeros(data_i.x.shape).to(devices)
         batch = torch.zeros(data_i.x.shape[0], dtype=torch.int64).to(devices)
         internal_batch_size = data_i.edge_index.shape[1] / 2
-        save_path_i = save_path + str(i).zfill(4) + '.png'  # 需要更多数量时，可以把4改成更大的数字
+        save_path_i = save_path + acidic_or_basisc + '_' + str(i).zfill(4) + '.png'  # 需要更多数量时，可以把4改成更大的数字
         highlight_atoms_or_bonds_from_IG(model=model,
                                          smiles=data_i.Smiles,
                                          inputs=data_i.x,
