@@ -49,4 +49,4 @@ Predicting pKa values with a CSV input file:
 Performing interpretability analysis with SMILES input directly:  
 &nbsp;&nbsp;&nbsp;&nbsp;`python interpretability.py --s "CC(=O)OC1=CC=CC=C1C(=O)O" "Cc1ccccc1NN=C(C#N)C#N" "COc1cccc(S(N)(=O)=O)c1" --t -1`  
 Performing interpretability analysis with a CSV input file:  
-&nbsp;&nbsp;&nbsp;&nbsp;`python interpretability.py --i input/input_example.csv --o custom_folder/`  
+&nbsp;&nbsp;&nbsp;&nbsp;`python interpretability.py --i input/input_example.csv --o visualization/`  
